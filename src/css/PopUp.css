@@ -1,0 +1,22 @@
+.modal-header {
+    background-color: #FD4556;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-button {
+    background-color: #0e1923;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal-button:hover {
+    background-color: #0e1923d3;
+}

@@ -1,0 +1,52 @@
+.agent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10%;
+}
+
+.agent-card {
+    align-items: stretch;
+    width: 80%;
+    overflow:hidden;
+
+    background-color: #0e1923;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: width 0.5s, height 0.5s, transform 0.2s;
+    margin: 5px;
+    font-size: 10px; /* 10px is the default font size FOR MOBILE - SCALE UP FOR LARGER SCREENS */
+}
+
+.agent-card:hover {
+    transform: scale(1.02);
+}
+
+.agent-card-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.1s ease-out 0s;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-blend-mode: darken;
+
+}
+
+.agent-card-child:hover {
+    transform: scale(1.1);
+    background-color: #00000077;
+}
+
+@media screen and (min-width: 375px) {
+    .agent-card-child {
+        background-size: contain;
+    }
+}
